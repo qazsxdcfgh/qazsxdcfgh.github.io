@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ONNX Model</title>
-    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
-</head>
-<body>
-    <h1>ONNX Model Demo</h1>
-    <script>
-        async function runModel() {
-            const session = new onnx.InferenceSession();
-            await session.loadModel('./onnx_model.onnx');
-            const input = new onnx.Tensor(new Float32Array([/* your input data */]), 'float32', [/* input dimensions */]);
-            const output = await session.run([input]);
-            console.log(output);
-        }
-        runModel();
-    </script>
-</body>
-</html>
-<!-- <html>
+<html>
   <head>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -111,4 +90,4 @@
     <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
     <script src="script.js"></script>
   </body>
-</html> -->
+</html>
