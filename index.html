@@ -12,7 +12,7 @@
         async function runModel(imageData) {
             // Load the ONNX model
             const session = new onnx.InferenceSession();
-            await session.loadModel('mnist_model.onnx');
+            await session.loadModel('onnx_model.onnx');
 
             // Prepare input tensor from the image data
             const inputTensor = preprocessImage(imageData);
