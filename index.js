@@ -1,5 +1,5 @@
 // Import ONNX.js
-import * as onnx from 'https://cdn.jsdelivr.net/npm/onnxjs@3.0.0/dist/onnx.min.js';
+import * as onnx from 'https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js';
 
 // Load the ONNX model
 const model = await onnx.load('onnx_model.onnx');
